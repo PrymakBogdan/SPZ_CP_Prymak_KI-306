@@ -1,0 +1,7 @@
+C:\\Program Files (x86)\\Steam\\steam.exe
+G:\\EnterTheGungeon\\EtG.exe
+C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe
+C:\\Program Files (x86)\\Notepad++\\notepad++.exe
+G:\\Microsoft VS Code\\Code.exe
+C:\\Users\\Bogdan\\AppData\\Roaming\\Movavi Video Suite 18\\Suite.exe
+G:\\QT_5\\Tools\\QtCreator\\bin\\qtcreator.exe
