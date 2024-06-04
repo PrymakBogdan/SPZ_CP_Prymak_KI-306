@@ -36,7 +36,6 @@ void MainWindow::on_bConnect_clicked()
 
             msgBox->show();
 
-            //clientSock.sendStringToHost(clientName);
 
             if(!clientSock.socket->waitForDisconnected(5000))
             {
@@ -86,7 +85,6 @@ bool MainWindow::setInfo()
             splitList.clear();
             splitList = clientSock.strDate.split("|");
 
-            //updateList();
             return true;
         }
         else
@@ -130,10 +128,6 @@ void  MainWindow::updateList()
     }
     ui->tList->setModel(model);
 }
-
-
-
-
 
 
 

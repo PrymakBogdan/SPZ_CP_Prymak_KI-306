@@ -21,7 +21,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_bAdd_clicked()
 {
-    //перевірити чи не пусті поля
     if(!ui->lineWay->text().isEmpty() && !ui->lineName->text().isEmpty())
     {
         saveFilePath(ui->lineWay->text() ,ui->lineName->text());
@@ -107,7 +106,7 @@ bool MainWindow::saveFilePath(const QString& filePath, const QString& fileName) 
 }
 
 bool MainWindow::readFilePaths() {
-    //QVector<QString> filePaths;
+
     listOfWays.clear();
     listOfNames.clear();
     QFile fileWay("listWay.txt");
@@ -220,14 +219,14 @@ void MainWindow::startPrograms(const QStringList& programs)
 
             std::wstring wProgram = program.toStdWString();
 
-            if (!CreateProcessW(NULL,   // ім'я модуля (необов'язкове)
+            if (!CreateProcessW(NULL,   // ім'я модуля
                                 &wProgram[0],  // командний рядок
-                                NULL,          // дескриптор процесу (необов'язковий)
-                                NULL,          // дескриптор потоку (необов'язковий)
+                                NULL,          // дескриптор процесу
+                                NULL,          // дескриптор потоку
                                 FALSE,         // наслідування дескрипторів
                                 0,             // створення прапорів
-                                NULL,          // середовище (необов'язкове)
-                                NULL,          // робочий каталог (необов'язковий)
+                                NULL,          // середовище
+                                NULL,          // робочий каталог
                                 &si,           // інформація про запуск
                                 &pi)           // інформація про процес
                 ) {
